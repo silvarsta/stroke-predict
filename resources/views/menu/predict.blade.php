@@ -5,6 +5,7 @@
 @section('menuPrediction', 'active')
 
 @section('content')
+<section>
     <div class="container mt-5">
         <h2>Prediction</h2>
         <form action="{{ route('prediction.predict') }}" method="post">
@@ -76,7 +77,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary">Predict</button>
+            <button type="submit" class="btn_2 ">Predict</button>
         </form>
         @if (session('prediction'))
             <div class="alert alert-success mt-3" role="alert">

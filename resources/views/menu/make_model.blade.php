@@ -5,13 +5,38 @@
 @section('menuMakeModel', 'active')
 
 @section('content')
-    <div class="container mt-5">
+<section class="about_us padding_top">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 col-lg-6">
+                <div class="about_us_img">
+                    <img src="template/img/top_service.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="about_us_text">
+                    <h2>Data Training</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra
+                        maecenas accumsan lacus vel</p>
+                        <form action="{{ route('make_model.train_and_test') }}" method="post">
+                            @csrf
+                            <button type="submit" class="btn_2 ">Train and Test Model</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+    {{-- <div class="container mt-5">
         <h2>Make Model</h2>
         <form action="{{ route('make_model.train_and_test') }}" method="post">
             @csrf
             <button type="submit" class="btn btn-primary">Train and Test Model</button>
         </form>
-    </div>
+    </div> --}}
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -23,7 +48,10 @@
         </div>
     @endif
     @if (session('trainDataSample') && session('trainDataLabel') && session('testDataSample') && session('testDataLabel'))
-        <h2>Data Training</h2>
+    <br><section>
+        <div class="container">
+        <div class="row justify-content-center">
+        {{-- <h2>Data Training</h2> --}}
         <div class="table-responsive">
             <table class="table">
                 <thead>
@@ -158,5 +186,7 @@
             </table>
         </div>
     @endif
-
+</div>
+</div>
+</section>
 @endsection

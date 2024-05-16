@@ -2985,6 +2985,9 @@ ul {
 .feature_part {
   padding: 140px 0 515px;
 }
+.feature_part2 {
+  padding: 0px 0 515px;
+}
 
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
@@ -5986,7 +5989,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_breadcrumb.scss */
 .breadcrumb_part .breadcrumb_iner .breadcrumb_iner_item h2 {
-  color: #fff;
+  color: #000000;
   font-size: 100px;
   font-weight: 700;
   text-transform: capitalize;
