@@ -6,8 +6,8 @@ use App\Http\Controllers\Menu\MakeModelController;
 use App\Http\Controllers\Menu\PredictController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {return view('welcome');});
-Route::get('/home', [LayoutController::class, 'index'])->name('home');
+Route::get('/index', function () { return view('layout.index'); });
+Route::get('/', [LayoutController::class, 'index'])->name('home');
 Route::get('/dataset', [DatasetController::class, 'index'])->name('dataset');
 Route::post('/dataset/upload', [DatasetController::class, 'upload'])->name('dataset.upload');
 Route::post('/dataset', [DatasetController::class, 'store'])->name('dataset.store');
