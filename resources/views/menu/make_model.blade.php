@@ -16,10 +16,7 @@
             <div class="col-md-6 col-lg-5">
                 <div class="about_us_text">
                     <h2>Data Training</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra
-                        maecenas accumsan lacus vel</p>
+                    <p>Dataset pelatihan di Stroke.Insight mencakup berbagai parameter penting untuk memprediksi risiko stroke. Setiap entri berisi kolom berikut: Index (nomor urut pasien), Gender (jenis kelamin), Age (usia), Hypertension (riwayat hipertensi), Heart Disease (penyakit jantung), Ever Married (status pernikahan), Work Type (jenis pekerjaan), Residence Type (jenis tempat tinggal), Avg Glucose Level (kadar glukosa rata-rata), BMI (indeks massa tubuh), Smoking Status (status merokok), dan Stroke (riwayat stroke). Data ini digunakan untuk melatih model dalam memprediksi kemungkinan stroke berdasarkan faktor-faktor risiko tersebut.</p>
                         <form action="{{ route('make_model.train_and_test') }}" method="post">
                             @csrf
                             <button type="submit" class="btn_2 ">Train and Test Model</button>

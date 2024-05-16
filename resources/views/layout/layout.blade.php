@@ -48,9 +48,9 @@
                                 <li class="nav-item active">
                                     <a class="nav-link @yield('menuHome')" href="{{route('index')}}">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link @yield('about')" href="{{route('about')}}">About</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a class="nav-link @yield('menuMakeModel')" href="{{ route("make_model") }}">Model</a>
                                 </li>
