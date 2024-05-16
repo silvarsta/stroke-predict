@@ -3,72 +3,55 @@
 @section('menuDataset', 'active')
 
 @section('content')
-<!-- Button trigger modal -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal">
-    Upload Datatrain
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="uploadModalLabel">Upload Datatrain</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+<!-- breadcrumb start-->
+<section class="breadcrumb_part breadcrumb_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb_iner">
+                    <div class="breadcrumb_iner_item">
+                        <h2>Upload Datatrain</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <form action="{{ route('dataset.upload') }}" method="post" enctype="multipart/form-data">
-            @csrf
-            <div class="form-group">
-              <input type="file" class="form-control" name="file" required>
-            </div>
-            <button type="submit" class="btn btn-success">Upload</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
-  @if (session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
+</section>
+<!-- breadcrumb end-->
 
-@if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
-<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#entryModal">
-    Start Data Entry
-</button>
-
-<!-- Modal Definition -->
-<div class="modal fade" id="entryModal" tabindex="-1" role="dialog" aria-labelledby="entryModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="entryModalLabel">Welcome to the Stroke Data Entry</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Please click "Proceed" to start entering the data for stroke analysis.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="proceedBtn">Proceed</button>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 mx-3" style=" max-height: 280px; border: 1px solid #000000; border-radius: 15px; padding: 20px;">
+            <!-- Bagian Kiri: Upload dari File -->
+            <h3>Upload Datatrain dari File</h3>
+            <p>Silakan pilih file yang ingin diunggah untuk dataset latih</p>
+            <hr>
+            <form action="{{ route('dataset.upload') }}" method="post" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group ">
+                    <label for="file" style="font-size: 18px;">Pilih File:</label>
+                    <input type="file" class="form-control-file" name="file" id="file" accept=".csv" required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">Upload</button>
+            </form>
             @if (session('success'))
-                <div class="alert alert-success">{{ session('success') }}</div>
+                <div class="alert alert-success mt-3">
+                    {{ session('success') }}
+                </div>
             @endif
             @if (session('error'))
-                <div class="alert alert-danger">{{ session('error') }}</div>
+                <div class="alert alert-danger mt-3">
+                    {{ session('error') }}
+                </div>
             @endif
-            <!-- Stroke Data Entry Form -->
-            <form method="POST" action="{{ route('dataset.store') }}" id="strokeForm" style="display:none;">
+        </div>
+
+        <div class="col-md-6 mx-3" style=" border: 1px solid #000000; border-radius: 15px; padding: 20px;">
+            <!-- Bagian Kanan: Upload dari Form -->
+            <h3>Start Data Entry</h3>
+
+            <form method="POST" action="{{ route('dataset.store') }}" id="strokeForm">
                 @csrf
                 <div class="form-group">
                     <label for="gender">Gender</label>
@@ -128,9 +111,16 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+            @if (session('success'))
+                <div class="alert alert-success mt-3">{{ session('success') }}</div>
+            @endif
+            @if (session('error'))
+                <div class="alert alert-danger mt-3">{{ session('error') }}</div>
+            @endif
         </div>
     </div>
 </div>
+
 <script>
     const proceedBtn = document.getElementById('proceedBtn');
     const strokeForm = document.getElementById('strokeForm');

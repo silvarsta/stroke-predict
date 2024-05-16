@@ -61,25 +61,10 @@
                                         Dataset
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Upload Datatrain</a>
+                                        <a class="dropdown-item @yield('menuDataset')" href="{{ route('dataset') }}">Upload Datatrain</a>
                                         <a class="dropdown-item" href="#">Start Data Entry</a>
                                     </div>
                                 </li>
-                                {{-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="blog.html">blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul> --}}
                         </div>
                         <a class="btn_2 d-none d-lg-block" href="{{ route("prediction") }}">Stroke Prediction</a>
                     </nav>
