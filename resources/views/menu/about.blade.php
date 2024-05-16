@@ -25,10 +25,9 @@
     <section class="feature_part2">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8">
+                <div class="col-xl-10">
                     <div class="section_tittle text-center">
-                        <p>Darkness multiply rule Which from without life creature blessed
-                            give moveth moveth seas make day which divided our have.</p>
+                        <p>Stroke.Insight adalah sebuah website yang menyediakan informasi mendalam tentang stroke, salah satu penyebab utama kematian di seluruh dunia menurut Organisasi Kesehatan Dunia (WHO), yang bertanggung jawab atas sekitar 11% dari total kematian global. Website ini menggunakan dataset komprehensif untuk memprediksi kemungkinan seorang pasien mengalami stroke berdasarkan berbagai parameter input seperti jenis kelamin, usia, berbagai penyakit yang diderita, dan status merokok. Setiap baris dalam data tersebut berisi informasi relevan mengenai kondisi pasien, memungkinkan analisis yang lebih mendetail. Fitur utama dari Stroke.Insight mencakup penjelasan tentang stroke, model prediktif yang digunakan, serta detail tentang dataset yang dipakai untuk pelatihan model tersebut. Dengan pendekatan ini, Stroke.Insight bertujuan untuk memberikan alat bantu yang berguna dalam mendeteksi risiko stroke dan membantu dalam upaya pencegahan melalui analisis data yang akurat.</p>
                     </div>
                 </div>
             </div>
@@ -49,38 +48,34 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="single_our_depertment">
-                                            <span class="our_depertment_icon"><img src="template/img/icon/feature_2.svg"
+                                            <span class="our_depertment_icon"><img src="template/img/icon/a1.svg"
                                                     alt=""></span>
-                                            <h4>Better Future</h4>
-                                            <p>Darkness multiply rule Which from without life creature blessed
-                                                give moveth moveth seas make day which divided our have.</p>
+                                            <h4>Informasi</h4>
+                                            <p>Website Stroke.Insight menyediakan penjelasan komprehensif tentang stroke, mencakup definisi, jenis-jenis stroke, gejala, faktor risiko, serta pencegahan dan pengobatannya. Informasi ini bertujuan untuk meningkatkan kesadaran dan pemahaman pengguna tentang kondisi medis yang serius ini, yang merupakan penyebab kematian terbesar kedua di dunia menurut WHO.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="single_our_depertment">
-                                            <span class="our_depertment_icon"><img src="template/img/icon/feature_2.svg"
+                                            <span class="our_depertment_icon"><img src="template/img/icon/a2.svg"
                                                     alt=""></span>
-                                            <h4>Better Future</h4>
-                                            <p>Darkness multiply rule Which from without life creature blessed
-                                                give moveth moveth seas make day which divided our have.</p>
+                                            <h4>Model Prediktif</h4>
+                                            <p>Stroke.Insight menggunakan model prediktif berbasis machine learning untuk memperkirakan risiko stroke pada pasien. Model ini dilatih menggunakan data historis pasien, dengan mempertimbangkan berbagai faktor seperti usia, jenis kelamin, riwayat penyakit, dan status merokok. Melalui analisis data ini, model dapat memberikan prediksi yang akurat mengenai kemungkinan seseorang mengalami stroke di masa depan.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="single_our_depertment">
-                                            <span class="our_depertment_icon"><img src="template/img/icon/feature_2.svg"
+                                            <span class="our_depertment_icon"><img src="template/img/icon/a3.svg"
                                                     alt=""></span>
-                                            <h4>Better Future</h4>
-                                            <p>Darkness multiply rule Which from without life creature blessed
-                                                give moveth moveth seas make day which divided our have.</p>
+                                            <h4>Dataset</h4>
+                                            <p>Dataset yang digunakan oleh Stroke.Insight berisi informasi rinci tentang pasien, termasuk parameter penting seperti usia, jenis kelamin, kondisi medis (seperti hipertensi dan diabetes), serta kebiasaan merokok. Setiap baris dalam dataset mewakili satu pasien dengan detail lengkap tentang faktor-faktor yang relevan. Data ini dikumpulkan dan disusun dengan hati-hati untuk memastikan keakuratan dan relevansi dalam pelatihan model prediktif.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="single_our_depertment">
-                                            <span class="our_depertment_icon"><img src="template/img/icon/feature_2.svg"
+                                            <span class="our_depertment_icon"><img src="template/img/icon/a4.svg"
                                                     alt=""></span>
-                                            <h4>Better Future</h4>
-                                            <p>Darkness multiply rule Which from without life creature blessed
-                                                give moveth moveth seas make day which divided our have.</p>
+                                            <h4>Prediksi Stroke</h4>
+                                            <p>Fitur prediksi stroke di Stroke.Insight memungkinkan pengguna untuk memasukkan data pribadi mereka dan mendapatkan prediksi mengenai risiko stroke. Dengan memasukkan informasi seperti usia, jenis kelamin, riwayat penyakit, dan status merokok, pengguna dapat menerima evaluasi risiko individual. Prediksi ini berguna sebagai alat bantu bagi individu maupun profesional medis dalam mengambil langkah preventif yang tepat dan menyesuaikan rencana perawatan.</p>
                                         </div>
                                     </div>
                                 </div>

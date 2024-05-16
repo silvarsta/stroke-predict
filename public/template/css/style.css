@@ -2074,7 +2074,7 @@ ul {
 
 /* line 1, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_our_depertment.scss */
 .our_depertment {
-  background-image: url("../img/review_bg.png");
+  background-image: url("../img/reservation_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2986,7 +2986,7 @@ ul {
   padding: 140px 0 515px;
 }
 .feature_part2 {
-  padding: 0px 0 515px;
+  padding: 25px 0 515px;
 }
 
 @media (max-width: 991px) {
