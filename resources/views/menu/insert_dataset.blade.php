@@ -14,10 +14,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- breadcrumb end-->
 
 <div class="container">
     <div class="row">
@@ -65,7 +61,7 @@
             <form method="POST" action="{{ route('dataset.store') }}" id="strokeForm">
                 @csrf
                 <div class="input-group my-3">
-                    <label for="gender">Gender</label>    
+                    <label for="gender">Gender</label>
                     <select class="form-select" id="gender" name="gender" required>
                         <option selected>Choose an answer</option>
                         <option value="1">Male</option>
@@ -172,7 +168,7 @@
         </div>
     </div>
 </div>
-
+<br><br>
 <script>
     const proceedBtn = document.getElementById('proceedBtn');
     const strokeForm = document.getElementById('strokeForm');

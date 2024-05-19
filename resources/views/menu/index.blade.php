@@ -46,18 +46,17 @@
                 <div class="col-lg-3 col-sm-12">
                     <div class="single_feature">
                         <div class="single_feature_part">
-                            <span class="single_feature_icon"><img src="template/img/icon/feature_1.svg" alt=""></span>
+                            <span class="single_feature_icon"><img src="template/img/icon/feature_2.svg" alt=""></span>
                             <h4>Jenis-Jenis Stroke</h4>
-                            <p>- Stroke iskemik: Terjadi ketika pembuluh darah yang memasok darah ke otak tersumbat oleh gumpalan darah atau plak.
-                                <br>- Stroke hemoragik: Terjadi ketika pembuluh darah di otak pecah, menyebabkan perdarahan di dalam atau sekitar otak.
+                            <p>Stroke iskemik: Terjadi ketika pembuluh darah yang memasok darah ke otak tersumbat oleh gumpalan darah atau plak. Stroke hemoragik: Terjadi ketika pembuluh darah di otak pecah, menyebabkan perdarahan di sekitar otak.
                                 </p>
                         </div>
                     </div>
                     <div class="single_feature">
                         <div class="single_feature_part">
                             <span class="single_feature_icon"><img src="template/img/icon/feature_2.svg" alt=""></span>
-                            <h4>Gejala Stroke</h4>
-                            <p>Gejala umum stroke termasuk kelemahan mendadak atau mati rasa di wajah, lengan, atau kaki (terutama pada satu sisi tubuh), kebingungan, kesulitan berbicara atau memahami pembicaraan, gangguan penglihatan pada satu atau kedua mata, dan kehilangan keseimbangan atau koordinasi.</p>
+                            <h4>Pencegahan Stroke</h4>
+                            <p>Faktor risiko utama meliputi tekanan darah tinggi (hipertensi), penyakit jantung, diabetes, merokok, obesitas, dan gaya hidup sedentari. Faktor genetik dan usia lanjut juga meningkatkan risiko terkena stroke.</p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +68,7 @@
                 <div class="col-lg-3 col-sm-12">
                     <div class="single_feature">
                         <div class="single_feature_part">
-                            <span class="single_feature_icon"><img src="template/img/icon/feature_1.svg" alt=""></span>
+                            <span class="single_feature_icon"><img src="template/img/icon/feature_2.svg" alt=""></span>
                             <h4>Faktor Risiko Stroke</h4>
                             <p>Faktor risiko utama meliputi tekanan darah tinggi (hipertensi), penyakit jantung, diabetes, merokok, obesitas, dan gaya hidup sedentari. Faktor genetik dan usia lanjut juga meningkatkan risiko terkena stroke.</p>
                         </div>
@@ -77,8 +76,8 @@
                     <div class="single_feature">
                         <div class="single_feature_part">
                             <span class="single_feature_icon"><img src="template/img/icon/feature_2.svg" alt=""></span>
-                            <h4>Pencegahan Stroke</h4>
-                            <p>Faktor risiko utama meliputi tekanan darah tinggi (hipertensi), penyakit jantung, diabetes, merokok, obesitas, dan gaya hidup sedentari. Faktor genetik dan usia lanjut juga meningkatkan risiko terkena stroke.</p>
+                            <h4>Gejala Stroke</h4>
+                            <p>Gejala umum stroke termasuk kelemahan mendadak atau mati rasa di wajah, lengan, atau kaki (terutama pada satu sisi tubuh), kebingungan, kesulitan berbicara atau memahami pembicaraan, gangguan penglihatan pada satu atau kedua mata, dan kehilangan keseimbangan atau koordinasi.</p>
                         </div>
                     </div>
                 </div>
