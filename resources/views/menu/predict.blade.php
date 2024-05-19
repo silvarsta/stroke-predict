@@ -27,7 +27,7 @@
             <form action="{{ route('prediction.predict') }}" method="post">
                 @csrf
                 <div class="input-group mb-3">
-                        <label for="gender">Gender</label>    
+                        <label for="gender">Gender</label>
                         <select class="form-select" id="gender" name="gender" required>
                             <option selected>Choose an answer</option>
                             <option value="1">Male</option>
