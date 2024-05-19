@@ -82,7 +82,7 @@
                 <div class="row justify-content-between">
                     <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
                         <a href="#" class="footer_logo"> <img src="template/img/logo.png" alt="#"> </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <p>Stroke.Insight Adalah Sebuah Website Yang Menyediakan Informasi Mendalam Tentang Penyakit Stroke.</p>
                     </div>
                     <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
                         <h4>Quick Links</h4>
