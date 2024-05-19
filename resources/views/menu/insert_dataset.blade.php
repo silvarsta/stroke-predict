@@ -3,6 +3,7 @@
 @section('menuDataset', 'active')
 
 @section('content')
+<<<<<<< HEAD
 <!-- breadcrumb start-->
 <section class="breadcrumb_part breadcrumb_bg">
     <div class="container">
@@ -14,6 +15,24 @@
                     </div>
                 </div>
             </div>
+=======
+<br><br><br><br><br>
+<!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal">
+    Upload Datatrain
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="uploadModalLabel">Upload Datatrain</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+>>>>>>> adade9b7e0145bed47e92816d96493d20826ada6
         </div>
     </div>
 </section>
