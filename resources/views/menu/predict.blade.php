@@ -22,7 +22,7 @@
 </section>
 <!-- breadcrumb end-->
 <section>
-    <div class="container">
+    <div class="container mb-4">
         <div class="col-md-8 mx-auto" style=" border: 1px solid #000000; border-radius: 15px; padding: 20px;">
             <form action="{{ route('prediction.predict') }}" method="post">
                 @csrf
