@@ -45,16 +45,16 @@ class DatasetController extends Controller
 
                 // Proses penyimpanan data
                 $stroke = Stroke::create([
-                    'gender'            => $row[0],
+                    'gender'            => (int)$row[0],
                     'age'               => (int) $row[1],
                     'hypertension'      => (bool) $row[2],
                     'heart_disease'     => (bool) $row[3],
-                    'ever_married'      => $row[4] === 'Yes',
-                    'work_type'         => $row[5],
-                    'residence_type'    => $row[6],
+                    'ever_married'      => (int)$row[4],
+                    'work_type'         => (int)$row[5],
+                    'residence_type'    => (int)$row[6],
                     'avg_glucose_level' => (float) $row[7],
                     'bmi'               => (float) $row[8],
-                    'smoking_status'    => $row[9],
+                    'smoking_status'    => (int)$row[9],
                     'stroke'            => (bool) $row[10]
                 ]);
 
@@ -80,16 +80,16 @@ class DatasetController extends Controller
     public function store(Request $request) {
         // Validasi input form
         $validated = $request->validate([
-            'gender' => 'required|string',
+            'gender' => 'required|integer',
             'age' => 'required|integer',
             'hypertension' => 'required|boolean',
             'heart_disease' => 'required|boolean',
             'ever_married' => 'required|boolean',
-            'work_type' => 'required|string',
-            'residence_type' => 'required|string',
+            'work_type' => 'required|integer',
+            'residence_type' => 'required|integer',
             'avg_glucose_level' => 'required|numeric',
             'bmi' => 'required|numeric',
-            'smoking_status' => 'required|string',
+            'smoking_status' => 'required|integer',
             'stroke' => 'required|boolean'
         ]);
 

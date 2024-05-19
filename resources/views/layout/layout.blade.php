@@ -35,7 +35,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="{{ route("index") }}"> <img src="template/img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="{{ route('index') }}"> <img src="template/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
                                     <a class="nav-link @yield('about')" href="{{route('about')}}">About</a>
                                 </li> --}}
                                 <li class="nav-item">
-                                    <a class="nav-link @yield('menuMakeModel')" href="{{ route("make_model") }}">Model</a>
+                                    <a class="nav-link @yield('menuMakeModel')" href="{{ route('make_model') }}">Model</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -62,11 +62,11 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item @yield('menuDataset')" href="{{ route('dataset') }}">Upload Datatrain</a>
-                                        <a class="dropdown-item" href="#">Start Data Entry</a>
+                                        <!-- <a class="dropdown-item" href="#">Start Data Entry</a> -->
                                     </div>
                                 </li>
                         </div>
-                        <a class="btn_2 d-none d-lg-block" href="{{ route("prediction") }}">Stroke Prediction</a>
+                        <a class="btn_2 d-none d-lg-block" href="{{ route('prediction') }}">Stroke Prediction</a>
                     </nav>
                 </div>
             </div>
@@ -83,65 +83,18 @@
                     <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
                         <a href="#" class="footer_logo"> <img src="template/img/logo.png" alt="#"> </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        <div class="social_logo">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"> <i class="ti-twitter"></i> </a>
-                            <a href="#"><i class="ti-instagram"></i></a>
-                            <a href="#"><i class="ti-skype"></i></a>
-                        </div>
                     </div>
                     <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Department</a></li>
-                            <li><a href="#"> Online payment</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Department</a></li>
+                            <li><a href="{{ route('index') }}">Home</a></li>
+                            <li><a href="{{ route('make_model') }}">Model</a></li>
+                            <li><a href="{{ route('dataset') }}">Upload Dataset</a></li>
+                            <li><a href="{{ route('prediction') }}">Stroke Prediction</a></li>
                         </ul>
                     </div>
-                    <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#">In the community</a></li>
-                            <li><a href="#">IU health foundation</a></li>
-                            <li><a href="#">Family support </a></li>
-                            <li><a href="#">Business solution</a></li>
-                            <li><a href="#">Community clinic</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-2 col-sm-6 col-md-6 single-footer-widget">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">Lights were season</a></li>
-                            <li><a href="#"> Their is let wherein</a></li>
-                            <li><a href="#">which given over</a></li>
-                            <li><a href="#">Without given She</a></li>
-                            <li><a href="#">Isn two signs think</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget">
-                        <h4>Newsletter</h4>
-                        <p>Seed good winged wherein which night multiply
-                            midst does not fruitful</p>
-                        <div class="form-wrap" id="mc_embed_signup">
-                            <form target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="form-inline">
-                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-                                    required="" type="email">
-                                <button class="click-btn btn btn-default text-uppercase"> <i class="ti-angle-right"></i>
-                                </button>
-                                <div style="position: absolute; left: -5000px;">
-                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
-                                        type="text">
-                                </div>
-
-                                <div class="info"></div>
-                            </form>
-                        </div>
-                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget"></div>
+                    <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget"></div>
                 </div>
             </div>
         </div>

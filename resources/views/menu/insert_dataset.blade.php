@@ -36,14 +36,25 @@
                 <button type="submit" class="btn btn-success">Upload</button>
             </form>
             @if (session('success'))
-                <div class="alert alert-success mt-3">
-                    {{ session('success') }}
-                </div>
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Sukses!',
+                        text: '{{ session('success') }}',
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+                </script>
             @endif
+
             @if (session('error'))
-                <div class="alert alert-danger mt-3">
-                    {{ session('error') }}
-                </div>
+                <script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: '{{ session('error') }}',
+                    });
+                </script>
             @endif
         </div>
 
@@ -53,70 +64,111 @@
 
             <form method="POST" action="{{ route('dataset.store') }}" id="strokeForm">
                 @csrf
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <input type="text" class="form-control" id="gender" name="gender" required>
+                <div class="input-group my-3">
+                    <label for="gender">Gender</label>    
+                    <select class="form-select" id="gender" name="gender" required>
+                        <option selected>Choose an answer</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="age">Age</label>
-                    <input type="number" class="form-control" id="age" name="age" required>
+                    <input type="text" class="form-select" id="age" name="age" required>
                 </div>
-                <div class="form-group">
-                    <label for="hypertension">Hypertension (0 = No, 1 = Yes)</label>
-                    <select class="form-control" id="hypertension" name="hypertension" required>
+                <div class="input-group mb-3">
+                    <label for="hypertension">Hypertension</label>
+                    <select class="form-select" id="hypertension" name="hypertension" required>
+                        <option selected>Choose an answer</option>
                         <option value="0">No</option>
                         <option value="1">Yes</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="heart_disease">Heart Disease (0 = No, 1 = Yes)</label>
-                    <select class="form-control" id="heart_disease" name="heart_disease" required>
+                <div class="input-group mb-3">
+                    <label for="heart_disease">Heart Disease</label>
+                    <select class="form-select" id="heart_disease" name="heart_disease" required>
+                        <option selected>Choose an answer</option>
                         <option value="0">No</option>
                         <option value="1">Yes</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="ever_married">Ever Married (0 = No, 1 = Yes)</label>
-                    <select class="form-control" id="ever_married" name="ever_married" required>
+                <div class="input-group mb-3">
+                    <label for="ever_married">Ever Married</label>
+                    <select class="form-select" id="ever_married" name="ever_married" required>
+                        <option selected>Choose an answer</option>
                         <option value="0">No</option>
                         <option value="1">Yes</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="work_type">Work Type</label>
-                    <input type="text" class="form-control" id="work_type" name="work_type" required>
+                    <select class="form-select" id="work_type" name="work_type" required>
+                        <option selected>Choose an answer</option>
+                        <option value="1">Private</option>
+                        <option value="2">Self Employed</option>
+                        <option value="3">Children</option>
+                        <option value="4">Govt Job</option>
+                        <option value="5">Never Worked</option>
+                    </select>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="residence_type">Residence Type</label>
-                    <input type="text" class="form-control" id="residence_type" name="residence_type" required>
+                    <select class="form-select" id="residence_type" name="residence_type" required>
+                        <option selected>Choose an answer</option>
+                        <option value="0">Rural</option>
+                        <option value="1">Urban</option>
+                    </select>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="avg_glucose_level">Average Glucose Level</label>
-                    <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" required>
+                    <input type="text" class="form-select" id="avg_glucose_level" name="avg_glucose_level" required>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="bmi">BMI</label>
-                    <input type="text" class="form-control" id="bmi" name="bmi" required>
+                    <input type="text" class="form-select" id="bmi" name="bmi" required>
                 </div>
-                <div class="form-group">
+                <div class="input-group mb-3">
                     <label for="smoking_status">Smoking Status</label>
-                    <input type="text" class="form-control" id="smoking_status" name="smoking_status" required>
+                    <select class="form-select" id="smoking_status" name="smoking_status" required>
+                        <option selected>Choose an answer</option>
+                        <option value="1">Smokes</option>
+                        <option value="2">Never Smokes</option>
+                        <option value="3">Formerly Smoked</option>
+                        <option value="4">Unknown</option>
+                    </select>
                 </div>
-                <div class="form-group">
-                    <label for="stroke">Stroke (0 = No, 1 = Yes)</label>
-                    <select class="form-control" id="stroke" name="stroke" required>
+                <div class="input-group mb-3">
+                    <label for="stroke">Stroke</label>
+                    <select class="form-select" id="stroke" name="stroke" required>
+                        <option selected>Choose an answer</option>
                         <option value="0">No</option>
                         <option value="1">Yes</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            @if (session('success'))
-                <div class="alert alert-success mt-3">{{ session('success') }}</div>
+            @if (session('success_entry'))
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Sukses!',
+                        text: '{{ session('success_entry') }}',
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+                </script>
             @endif
-            @if (session('error'))
-                <div class="alert alert-danger mt-3">{{ session('error') }}</div>
+
+            @if (session('error_entry'))
+                <script>
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: '{{ session('error_entry') }}',
+                    });
+                </script>
             @endif
+
         </div>
     </div>
 </div>
@@ -129,5 +181,18 @@
         strokeForm.style.display = 'block';
     });
 </script>
+<!-- Di bagian header atau di bagian bawah halaman Anda -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    window.onload = function() {
+        @if(session('success'))
+            swal("Sukses!", "{{ session('success') }}", "success");
+        @elseif(session('error'))
+            swal("Gagal!", "{{ session('error') }}", "error");
+        @endif
+    }
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 @endsection
