@@ -3,7 +3,6 @@
 @section('menuDataset', 'active')
 
 @section('content')
-<<<<<<< HEAD
 <!-- breadcrumb start-->
 <section class="breadcrumb_part breadcrumb_bg">
     <div class="container">
@@ -15,13 +14,12 @@
                     </div>
                 </div>
             </div>
-=======
 <br><br><br><br><br>
 <!-- Button trigger modal -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal">
+{{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadModal">
     Upload Datatrain
-  </button>
+  </button> --}}
 
   <!-- Modal -->
   <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
@@ -32,7 +30,6 @@
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
->>>>>>> adade9b7e0145bed47e92816d96493d20826ada6
         </div>
     </div>
 </section>
@@ -84,7 +81,7 @@
             <form method="POST" action="{{ route('dataset.store') }}" id="strokeForm">
                 @csrf
                 <div class="input-group my-3">
-                    <label for="gender">Gender</label>    
+                    <label for="gender">Gender</label>
                     <select class="form-select" id="gender" name="gender" required>
                         <option selected>Choose an answer</option>
                         <option value="1">Male</option>
@@ -191,7 +188,7 @@
         </div>
     </div>
 </div>
-
+<br><br>
 <script>
     const proceedBtn = document.getElementById('proceedBtn');
     const strokeForm = document.getElementById('strokeForm');
